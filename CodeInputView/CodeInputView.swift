@@ -72,5 +72,5 @@ public class CodeInputView: UIView, UIKeyInput {
 }
 
 public protocol CodeInputViewDelegate {
-    public func codeInputView(codeInputView: CodeInputView, didFinishWithCode code: String)
+    func codeInputView(codeInputView: CodeInputView, didFinishWithCode code: String)
 }
