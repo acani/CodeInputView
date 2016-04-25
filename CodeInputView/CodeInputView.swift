@@ -56,7 +56,7 @@ public class CodeInputView: UIView, UIKeyInput {
     public func deleteBackward() {
         if nextTag > 1 {
             nextTag -= 1
-            (self.viewWithTag(nextTag) as! UILabel).text = "-"
+            (self.viewWithTag(nextTag) as! UILabel).text = "–"
         }
     }
 
