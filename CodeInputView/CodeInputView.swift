@@ -27,10 +27,7 @@ public class CodeInputView: UIView, UIKeyInput {
             frame.origin.x += 35 + 15
         }
     }
-
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    required public init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") } // NSCoding
 
     // MARK: - UIKeyInput
 
