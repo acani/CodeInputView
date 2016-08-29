@@ -27,7 +27,7 @@ class EnterCodeViewController: UIViewController, CodeInputViewDelegate {
         let title = code == "1234" ? "Correct!" : "Wrong!"
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Cancel) { _ in
-            (self.view.viewWithTag(17) as! CodeInputView).clear()
+            (self.view.viewWithTag(17)! as! CodeInputView).clear()
         })
         presentViewController(alert, animated: true, completion: nil)
     }

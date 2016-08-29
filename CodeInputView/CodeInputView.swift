@@ -23,7 +23,7 @@ public class CodeInputView: UIView, UIKeyInput {
             digitLabel.tag = index
             digitLabel.text = "–"
             digitLabel.textAlignment = .Center
-            self.addSubview(digitLabel)
+            addSubview(digitLabel)
             frame.origin.x += 35 + 15
         }
     }
@@ -37,13 +37,13 @@ public class CodeInputView: UIView, UIKeyInput {
 
     public func insertText(text: String) {
         if nextTag < 5 {
-            (self.viewWithTag(nextTag) as! UILabel).text = text
+            (viewWithTag(nextTag)! as! UILabel).text = text
             nextTag += 1
 
             if nextTag == 5 {
-                var code = (self.viewWithTag(1) as! UILabel).text!
-                for index in 2..<nextTag {
-                    code += (self.viewWithTag(index) as! UILabel).text!
+                var code = ""
+                for index in 1..<nextTag {
+                    code += (viewWithTag(index)! as! UILabel).text!
                 }
                 delegate?.codeInputView(self, didFinishWithCode: code)
             }
@@ -53,7 +53,7 @@ public class CodeInputView: UIView, UIKeyInput {
     public func deleteBackward() {
         if nextTag > 1 {
             nextTag -= 1
-            (self.viewWithTag(nextTag) as! UILabel).text = "–"
+            (viewWithTag(nextTag)! as! UILabel).text = "–"
         }
     }
 
