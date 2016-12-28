@@ -19,7 +19,7 @@ open class CodeInputView: UIView, UIKeyInput {
         var frame = CGRect(x: 15, y: 10, width: 35, height: 40)
         for index in 1...4 {
             let digitLabel = UILabel(frame: frame)
-            digitLabel.font = UIFont.systemFont(ofSize: 42)
+            digitLabel.font = .systemFont(ofSize: 42)
             digitLabel.tag = index
             digitLabel.text = "–"
             digitLabel.textAlignment = .center
