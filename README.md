@@ -1,6 +1,6 @@
 # CodeInputView
 
-4-Digit Code Input Text Field
+6-Digit Code Input Text Field
 
 ![Screenshots][1]
 
@@ -14,7 +14,7 @@ import UIKit
 class EnterCodeViewController: UIViewController, CodeInputViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
-        let frame = CGRect(x: (view.frame.width-215)/2, y: 242, width: 215, height: 60)
+        let frame = CGRect(x: (view.frame.width-315)/2, y: 242, width: 315, height: 60)
         let codeInputView = CodeInputView(frame: frame)
         codeInputView.delegate = self
         view.addSubview(codeInputView)
@@ -22,7 +22,7 @@ class EnterCodeViewController: UIViewController, CodeInputViewDelegate {
     }
 
     func codeInputView(codeInputView: CodeInputView, didFinishWithCode code: String) {
-        let title = (code == "1234" ? "Correct!" : "Wrong!")
+        let title = (code == "123456" ? "Correct!" : "Wrong!")
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel) { _ in codeInputView.clear() })
         present(alert, animated: true)

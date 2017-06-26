@@ -15,9 +15,9 @@ open class CodeInputView: UIView, UIKeyInput {
     public override init(frame: CGRect) {
         super.init(frame: frame)
 
-        // Add four digitLabels
+        // Add six digitLabels
         var frame = CGRect(x: 15, y: 10, width: 35, height: 40)
-        for index in 1...4 {
+        for index in 1...6 {
             let digitLabel = UILabel(frame: frame)
             digitLabel.font = .systemFont(ofSize: 42)
             digitLabel.tag = index
@@ -36,11 +36,11 @@ open class CodeInputView: UIView, UIKeyInput {
     }
 
     open func insertText(_ text: String) {
-        if nextTag < 5 {
+        if nextTag < 7 {
             (viewWithTag(nextTag)! as! UILabel).text = text
             nextTag += 1
 
-            if nextTag == 5 {
+            if nextTag == 7 {
                 var code = ""
                 for index in 1..<nextTag {
                     code += (viewWithTag(index)! as! UILabel).text!
