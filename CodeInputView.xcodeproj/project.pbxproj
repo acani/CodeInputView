@@ -161,7 +161,7 @@
 			};
 			buildConfigurationList = D2D088A71CCDC1D700FAAE8F /* Build configuration list for PBXProject "CodeInputView" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
