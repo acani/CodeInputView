@@ -151,7 +151,7 @@
 				TargetAttributes = {
 					D2D088AC1CCDC1D700FAAE8F = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					D2D088B61CCDC1D700FAAE8F = {
 						CreatedOnToolsVersion = 7.3;
@@ -351,7 +351,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -370,7 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.acani.CodeInputView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
