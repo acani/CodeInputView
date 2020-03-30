@@ -6,9 +6,7 @@ open class CodeInputView: UIView, UIKeyInput {
 
   // MARK: - UIResponder
 
-  open override var canBecomeFirstResponder : Bool {
-    return true
-  }
+  open override var canBecomeFirstResponder: Bool { true }
 
   // MARK: - UIView
 
@@ -27,13 +25,16 @@ open class CodeInputView: UIView, UIKeyInput {
       frame.origin.x += 35 + 15
     }
   }
-  required public init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") } // NSCoding
+
+  // MARK: - NSCoding
+
+  required public init?(coder: NSCoder) {
+    fatalError("init(coder:) hasn't been implemented")
+  }
 
   // MARK: - UIKeyInput
 
-  public var hasText : Bool {
-    return nextTag > 1 ? true : false
-  }
+  public var hasText: Bool { nextTag > 1 ? true : false }
 
   open func insertText(_ text: String) {
     if nextTag < 7 {
@@ -57,15 +58,11 @@ open class CodeInputView: UIView, UIKeyInput {
     }
   }
 
-  open func clear() {
-    while nextTag > 1 {
-      deleteBackward()
-    }
-  }
+  open func clear() { while nextTag > 1 { deleteBackward() } }
 
   // MARK: - UITextInputTraits
 
-  open var keyboardType: UIKeyboardType { get { return .numberPad } set { } }
+  open var keyboardType: UIKeyboardType { get { .numberPad } set { } }
 }
 
 public protocol CodeInputViewDelegate {

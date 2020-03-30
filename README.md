@@ -22,7 +22,7 @@ class EnterCodeViewController: UIViewController, CodeInputViewDelegate {
   }
 
   func codeInputView(codeInputView: CodeInputView, didFinishWithCode code: String) {
-    let title = (code == "123456" ? "Correct!" : "Wrong!")
+    let title = code == "123456" ? "Correct!" : "Wrong!"
     let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "OK", style: .cancel) { _ in codeInputView.clear() })
     present(alert, animated: true)
