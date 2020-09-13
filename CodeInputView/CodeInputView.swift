@@ -28,9 +28,7 @@ open class CodeInputView: UIView, UIKeyInput {
 
   // MARK: - NSCoding
 
-  required public init?(coder: NSCoder) {
-    fatalError("init(coder:) hasn't been implemented")
-  }
+  required public init?(coder: NSCoder) { fatalError("init(coder:) hasn't been implemented") }
 
   // MARK: - UIKeyInput
 

@@ -7,27 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2D088B81CCDC1D700FAAE8F /* CodeInputView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D088AD1CCDC1D700FAAE8F /* CodeInputView.framework */; };
-		D2D088BD1CCDC1D700FAAE8F /* CodeInputViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D088BC1CCDC1D700FAAE8F /* CodeInputViewTests.swift */; };
 		D2D088C81CCDC2BB00FAAE8F /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D088C71CCDC2BB00FAAE8F /* CodeInputView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D2D088B91CCDC1D700FAAE8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2D088A41CCDC1D700FAAE8F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2D088AC1CCDC1D700FAAE8F;
-			remoteInfo = CodeInputView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D2D088AD1CCDC1D700FAAE8F /* CodeInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D088B21CCDC1D700FAAE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2D088B71CCDC1D700FAAE8F /* CodeInputViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeInputViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2D088BC1CCDC1D700FAAE8F /* CodeInputViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputViewTests.swift; sourceTree = "<group>"; };
-		D2D088BE1CCDC1D700FAAE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D088C71CCDC2BB00FAAE8F /* CodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		D2D088C91CCDC32D00FAAE8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D2D088CA1CCDC36700FAAE8F /* Screenshots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Screenshots.gif; sourceTree = "<group>"; };
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2D088B41CCDC1D700FAAE8F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2D088B81CCDC1D700FAAE8F /* CodeInputView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				D2D088AF1CCDC1D700FAAE8F /* CodeInputView */,
-				D2D088BB1CCDC1D700FAAE8F /* CodeInputViewTests */,
 				D2D088AE1CCDC1D700FAAE8F /* Products */,
 				D2D088C91CCDC32D00FAAE8F /* README.md */,
 				D2D088CA1CCDC36700FAAE8F /* Screenshots.gif */,
@@ -67,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				D2D088AD1CCDC1D700FAAE8F /* CodeInputView.framework */,
-				D2D088B71CCDC1D700FAAE8F /* CodeInputViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,15 +54,6 @@
 				D2D088B21CCDC1D700FAAE8F /* Info.plist */,
 			);
 			path = CodeInputView;
-			sourceTree = "<group>";
-		};
-		D2D088BB1CCDC1D700FAAE8F /* CodeInputViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				D2D088BC1CCDC1D700FAAE8F /* CodeInputViewTests.swift */,
-				D2D088BE1CCDC1D700FAAE8F /* Info.plist */,
-			);
-			path = CodeInputViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,24 +87,6 @@
 			productReference = D2D088AD1CCDC1D700FAAE8F /* CodeInputView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D2D088B61CCDC1D700FAAE8F /* CodeInputViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2D088C41CCDC1D700FAAE8F /* Build configuration list for PBXNativeTarget "CodeInputViewTests" */;
-			buildPhases = (
-				D2D088B31CCDC1D700FAAE8F /* Sources */,
-				D2D088B41CCDC1D700FAAE8F /* Frameworks */,
-				D2D088B51CCDC1D700FAAE8F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2D088BA1CCDC1D700FAAE8F /* PBXTargetDependency */,
-			);
-			name = CodeInputViewTests;
-			productName = CodeInputViewTests;
-			productReference = D2D088B71CCDC1D700FAAE8F /* CodeInputViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,10 +100,6 @@
 					D2D088AC1CCDC1D700FAAE8F = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 1020;
-					};
-					D2D088B61CCDC1D700FAAE8F = {
-						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -173,20 +117,12 @@
 			projectRoot = "";
 			targets = (
 				D2D088AC1CCDC1D700FAAE8F /* CodeInputView */,
-				D2D088B61CCDC1D700FAAE8F /* CodeInputViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D2D088AB1CCDC1D700FAAE8F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2D088B51CCDC1D700FAAE8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,23 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2D088B31CCDC1D700FAAE8F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2D088BD1CCDC1D700FAAE8F /* CodeInputViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D2D088BA1CCDC1D700FAAE8F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2D088AC1CCDC1D700FAAE8F /* CodeInputView */;
-			targetProxy = D2D088B91CCDC1D700FAAE8F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D2D088BF1CCDC1D700FAAE8F /* Debug */ = {
@@ -271,7 +191,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -324,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -374,28 +294,6 @@
 			};
 			name = Release;
 		};
-		D2D088C51CCDC1D700FAAE8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CodeInputViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.acani.CodeInputViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		D2D088C61CCDC1D700FAAE8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CodeInputViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.acani.CodeInputViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,15 +311,6 @@
 			buildConfigurations = (
 				D2D088C21CCDC1D700FAAE8F /* Debug */,
 				D2D088C31CCDC1D700FAAE8F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2D088C41CCDC1D700FAAE8F /* Build configuration list for PBXNativeTarget "CodeInputViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2D088C51CCDC1D700FAAE8F /* Debug */,
-				D2D088C61CCDC1D700FAAE8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
